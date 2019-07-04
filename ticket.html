@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PayMaster - Customer Dashboard</title>
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta content="template language" name="keywords">
+  <meta content="Tamerlan Soziev" name="author">
+  <meta content="PayMaster - Customer Dashboard" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="favicon.png" rel="shortcut icon">
+  <link href="apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" type="text/css">
+  <link href="bower_components/select2/dist/css/select2.min.css" rel="stylesheet">
+  <link href="bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+  <link href="bower_components/dropzone/dist/dropzone.css" rel="stylesheet">
+  <link href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+  <link href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+  <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet">
+  <link href="css/main.css?version=4.4.0" rel="stylesheet">
+</head>
+
+<body class="menu-position-side menu-side-left full-screen with-content-panel">
+  <div class="all-wrapper with-side-panel solid-bg-all">
+    <div class="search-with-suggestions-w">
+      <div class="search-with-suggestions-modal">
+        <div class="element-search">
+          <input class="search-suggest-input" placeholder="Start typing to search..." type="text">
+          <div class="close-search-suggestions">
+            <i class="os-icon os-icon-x"></i>
+          </div>
+          </input>
+        </div>
+        <div class="search-suggestions-group">
+          <div class="ssg-header">
+            <div class="ssg-icon">
+              <div class="os-icon os-icon-box"></div>
+            </div>
+            <div class="ssg-name">
+              Projects
+            </div>
+            <div class="ssg-info">
+              24 Total
+            </div>
+          </div>
+          <div class="ssg-content">
+            <div class="ssg-items ssg-items-boxed">
+              <a class="ssg-item" href="users_profile_big.html">
+                <div class="item-media" style="background-image: url(img/company6.png)"></div>
+                <div class="item-name">
+                  Integ
+                  <span>ration</span> with API
+                </div>
+              </a>
+              <a class="ssg-item" href="users_profile_big.html">
+                <div class="item-media" style="background-image: url(img/company7.png)"></div>
+                <div class="item-name">
+                  Deve
+                  <span>lopm</span>ent Project
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="search-suggestions-group">
+          <div class="ssg-header">
+            <div class="ssg-icon">
+              <div class="os-icon os-icon-users"></div>
+            </div>
+            <div class="ssg-name">
+              Customers
+            </div>
+            <div class="ssg-info">
+              12 Total
+            </div>
+          </div>
+          <div class="ssg-content">
+            <div class="ssg-items ssg-items-list">
+              <a class="ssg-item" href="users_profile_big.html">
+                <div class="item-media" style="background-image: url(img/avatar1.jpg)"></div>
+                <div class="item-name">
+                  John Ma
+                  <span>yer</span>s
+                </div>
+              </a>
+              <a class="ssg-item" href="users_profile_big.html">
+                <div class="item-media" style="background-image: url(img/avatar2.jpg)"></div>
+                <div class="item-name">
+                  Th
+                  <span>omas</span> Mullier
+                </div>
+              </a>
+              <a class="ssg-item" href="users_profile_big.html">
+                <div class="item-media" style="background-image: url(img/avatar3.jpg)"></div>
+                <div class="item-name">
+                  Kim C
+                  <span>olli</span>ns
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="search-suggestions-group">
+          <div class="ssg-header">
+            <div class="ssg-icon">
+              <div class="os-icon os-icon-folder"></div>
+            </div>
+            <div class="ssg-name">
+              Files
+            </div>
+            <div class="ssg-info">
+              17 Total
+            </div>
+          </div>
+          <div class="ssg-content">
+            <div class="ssg-items ssg-items-blocks">
+              <a class="ssg-item" href="#">
+                <div class="item-icon">
+                  <i class="os-icon os-icon-file-text"></i>
+                </div>
+                <div class="item-name">
+                  Work
+                  <span>Not</span>e.txt
+                </div>
+              </a>
+              <a class="ssg-item" href="#">
+                <div class="item-icon">
+                  <i class="os-icon os-icon-film"></i>
+                </div>
+                <div class="item-name">
+                  V
+                  <span>ideo</span>.avi
+                </div>
+              </a>
+              <a class="ssg-item" href="#">
+                <div class="item-icon">
+                  <i class="os-icon os-icon-database"></i>
+                </div>
+                <div class="item-name">
+                  User
+                  <span>Tabl</span>e.sql
+                </div>
+              </a>
+              <a class="ssg-item" href="#">
+                <div class="item-icon">
+                  <i class="os-icon os-icon-image"></i>
+                </div>
+                <div class="item-name">
+                  wed
+                  <span>din</span>g.jpg
+                </div>
+              </a>
+            </div>
+            <div class="ssg-nothing-found">
+              <div class="icon-w">
+                <i class="os-icon os-icon-eye-off"></i>
+              </div>
+              <span>No files were found. Try changing your query...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="layout-w">
+      <!-------------------- START - Mobile Menu -------------------->
+      <div class="menu-mobile menu-activated-on-click color-scheme-dark">
+        <div class="mm-logo-buttons-w">
+          <div class="mm-buttons">
+            <div class="content-panel-open">
+              <div class="os-icon os-icon-grid-circles"></div>
+            </div>
+            <div class="mobile-menu-trigger">
+              <div class="os-icon os-icon-hamburger-menu-1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-and-user">
+          <div class="logged-user-w">
+            <div class="avatar-w">
+              <img alt="" src="img/Passport.jpg">
+            </div>
+            <div class="logged-user-info-w">
+              <div class="logged-user-name">
+                Omodara Tolulope
+              </div>
+              <div class="logged-user-role text-center">
+                Customer
+              </div>
+            </div>
+          </div>
+          <!-------------------- START - Mobile Menu List  -------------------->
+          <ul class="main-menu">
+            <li class="has-sub-menu">
+              <a href="index.html">
+                <div class="icon-w icon__w">
+                  <div class="os-icon os-icon-layout"></div>
+                </div>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="has-sub-menu">
+              <a href="index.html">
+                <div class="icon-w icon__w">
+                  <div class="os-icon os-icon-layers"></div>
+                </div>
+                <span>Recharge</span>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="buy__data.html">Buy Data</a>
+                </li>
+                <li>
+                  <a href="buy__airtime.html">Buy Airtime</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub-menu">
+              <a href="index.html">
+                <div class="icon-w icon__w">
+                  <div class="os-icon os-icon-package"></div>
+                </div>
+                <span>Services</span>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="government.html">Government</a>
+                </li>
+                <li>
+                  <a href="aids.html">Aids, Grants and Donation</a>
+                </li>
+                <li>
+                  <a href="cable__tv.html">Cable TV</a>
+                </li>
+                <li>
+                  <a href="my__bank.html">My Bank</a>
+                  </a>
+                </li>
+                <li>
+                  <a href="betting.html">Betting</a>
+                </li>
+                <li>
+                  <a href="transport.html">Transport, Hotels and Events</a>
+                  </a>
+                </li>
+                <li>
+                  <a href="utilities.html">Utilities</a>
+                </li>
+                <li>
+                  <a href="group.html">Group/Association</a>
+                </li>
+                <li>
+                  <a href="commerce.html">Commerce</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub-menu">
+              <a href="payment__history.html">
+                <div class="icon-w icon__w">
+                  <div class="os-icon os-icon-file-text"></div>
+                </div>
+                <span>Payment History</span>
+              </a>
+            </li>
+            <li class="has-sub-menu active__list">
+              <a href="support__tickets.html">
+                <div class="icon-w icon__w">
+                  <div class="os-icon os-icon-mail"></div>
+                </div>
+                <span>Ticket</span>
+              </a>
+            </li>
+            <li class=" has-sub-menu">
+              <a href="referral.html">
+                <div class="icon-w icon__w">
+                  <div class="os-icon os-icon-users"></div>
+                </div>
+                <span class="navbar__label">Referral</span>
+              </a>
+            </li>
+            <li class="has-sub-menu">
+              <a href="my__profile.html">
+                <div class="icon-w icon__w">
+                  <div class="os-icon os-icon-user-male-circle2"></div>
+                </div>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li class="has-sub-menu">
+              <a href="#">
+                <div class="icon-w icon__w">
+                  <div class="os-icon os-icon-signs-11"></div>
+                </div>
+                <span>Logout</span>
+              </a>
+            </li>
+          </ul>
+          <!-------------------- END - Mobile Menu List -------------------->
+        </div>
+      </div>
+      <!-------------------- END - Mobile Menu -------------------->
+
+      <!-------------------- START - Main Menu -------------------->
+      <div class="menu-w color-scheme-dark color-style-bright menu-position-side menu-side-left menu-layout-mini sub-menu-style-over sub-menu-color-bright selected-menu-color-light menu-activated-on-hover menu-has-selected-link navbar__static-aside">
+        <div class="avatar__wrapper">
+          <div class="avatar__icon">
+            <img alt="" src="img/Passport.jpg">
+          </div>
+          <h6>Omodara Tolulope</h6>
+          <div class="logged-user-role text-center">
+            Customer
+          </div>
+        </div>
+        <h1 class="menu-page-header">
+          Page Header
+        </h1>
+        <ul class="main-menu">
+          <li class="sub-header">
+            <span>Layouts</span>
+          </li>
+          <li class="selected has-sub-menu">
+            <a href="index.html">
+              <div class="icon-w icon__w">
+                <div class="os-icon os-icon-layout"></div>
+              </div>
+              <span class="navbar__label">Dashboard</span>
+            </a>
+          </li>
+          <li class=" has-sub-menu">
+            <a href="index.html">
+              <div class="icon-w icon__w">
+                <div class="os-icon os-icon-layers"></div>
+              </div>
+              <span class="navbar__label">Recharge</span>
+            </a>
+            <div class="sub-menu-w">
+              <div class="sub-menu-header">
+                Recharge
+              </div>
+              <div class="sub-menu-icon">
+                <i class="os-icon os-icon-layers"></i>
+              </div>
+              <div class="sub-menu-i">
+                <ul class="sub-menu">
+                  <li>
+                    <a href="buy__data.html">Buy Data</a>
+                  </li>
+                  <li>
+                    <a href="buy__airtime.html">Buy Airtime</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="sub-header">
+            <span>Options</span>
+          </li>
+          <li class=" has-sub-menu">
+            <a href="index.html">
+              <div class="icon-w icon__w">
+                <div class="os-icon os-icon-package"></div>
+              </div>
+              <span class="navbar__label">Services</span>
+            </a>
+            <div class="sub-menu-w">
+              <div class="sub-menu-header">
+                Services
+              </div>
+              <div class="sub-menu-icon">
+                <i class="os-icon os-icon-package"></i>
+              </div>
+              <div class="sub-menu-i">
+                <ul class="sub-menu">
+                  <li>
+                    <a href="government.html">Government</a>
+                  </li>
+                  <li>
+                    <a href="aids.html">Aids, Grants and Donation</a>
+                  </li>
+                  <li>
+                    <a href="cable__tv.html">Cable TV</a>
+                  </li>
+                  <li>
+                    <a href="my__bank.html">My Bank</a>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="betting.html">Betting</a>
+                  </li>
+                  <li>
+                    <a href="transport.html">Transport, Hotels and Events</a>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="utilities.html">Utilities</a>
+                  </li>
+                  <li>
+                    <a href="group.html">Group/Association</a>
+                  </li>
+                  <li>
+                    <a href="commerce.html">Commerce</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class=" has-sub-menu">
+            <a href="payment__history.html">
+              <div class="icon-w icon__w">
+                <div class="os-icon os-icon-file-text"></div>
+              </div>
+              <span class="navbar__label">Payment History</span>
+            </a>
+          </li>
+          <li class="sub-header">
+            <span>Elements</span>
+          </li>
+          <li class="has-sub-menu active__list">
+            <a href="ticket.html">
+              <div class="icon-w icon__w">
+                <div class="os-icon os-icon-mail"></div>
+              </div>
+              <span class="navbar__label">Ticket</span>
+            </a>
+            <div class="sub-menu-w">
+              <div class="sub-menu-header">
+                Ticket
+              </div>
+              <div class="sub-menu-icon">
+                <i class="os-icon os-icon-mail"></i>
+              </div>
+            </div>
+          </li>
+          <li class=" has-sub-menu">
+            <a href="referral.html">
+              <div class="icon-w icon__w">
+                <div class="os-icon os-icon-users"></div>
+              </div>
+              <span class="navbar__label">Referral</span>
+            </a>
+          </li>
+          <li class=" has-sub-menu">
+            <a href="my__profile.html">
+              <div class="icon-w icon__w">
+                <div class="os-icon os-icon-user-male-circle2"></div>
+              </div>
+              <span class="navbar__label">My Profile</span>
+            </a>
+          </li>
+          <li class="has-sub-menu">
+            <a href="#">
+              <div class="icon-w icon__w">
+                <div class="os-icon os-icon-signs-11"></div>
+              </div>
+              <span class="navbar__label">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-------------------- END - Main Menu -------------------->
+
+      <div class="content-w">
+        <!-------------------- START - Top Bar -------------------->
+        <div class="top-bar color-scheme-bright">
+          <div class="topbar__left">
+            <div class="topbar__menuicon">
+              <div class="os-icon os-icon-menu"></div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="btn btn-outline-success btn__wrapper">
+                  Wallet Balance
+                </div>
+              </div>
+              <div class="col">
+                <div class="btn btn-outline-success btn__wrapper">
+                  Wallet Top Up
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="topbar__right">
+            <a href="#">
+              <i class="os-icon os-icon-signs-11"></i>
+              <span>Logout</span>
+            </a>
+          </div>
+        </div>
+        <!-------------------- END - Top Bar -------------------->
+
+
+        <div class="content-panel-toggler">
+          <i class="os-icon os-icon-grid-squares-22"></i>
+          <span>Sidebar</span>
+        </div>
+        <div class="content-i">
+          <div class="content-box">
+            <div class="page__title">
+              <h5>Ticket</h5>
+            </div>
+            <br>
+            <div class="os-tabs-w">
+              <div class="os-tabs-controls os-tabs-complex">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item nav-actions d-none d-sm-block ">
+                    <a href="ticket__new__ticket.html" class="btn btn-outline-success">Open New Ticket</a>
+                  </li>
+                  <li>
+                    <div class="element-search autosuggest-search-activator element__search">
+                      <div class="icon__s">
+                        <div class="os-icon os-icon-search"></div>
+                      </div>
+                      <input placeholder="Search something ..." type="text">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-4 ">
+                <div class="col-12 col-sm-12 col-xxl-6">
+                  <a class="element-box el-tablo centered trend-in-corner smaller card__pd0 " href="# ">
+                    <div class="row ">
+                      <div class="col-sm-4 col-lg-4 col-xxl-4 ">
+                        <div class="stat__bgblue ">
+                          <div class="os-icon os-icon-book stat__iconwrapper stat__icon "></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-8 col-lg-8 col-xxl-8 ">
+                        <div class="stat__icontext ">
+                          <h4>My Tickets</h4>
+                          <h6>1
+                            <span class="pull__right ">1</span>
+                          </h6>
+                          <small>Months
+                            <span class="pull__right ">Year</span>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-4 ">
+                <div class="col-12 col-sm-12 col-xxl-6 ">
+                  <a class="element-box el-tablo centered trend-in-corner smaller card__pd0 " href="# ">
+                    <div class="row ">
+                      <div class="col-sm-4 col-lg-4 col-xxl-4 ">
+                        <div class="stat__bggreen">
+                          <div class="os-icon icon-feather-server stat__iconwrapper stat__icon "></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-8 col-lg-8 col-xxl-8 ">
+                        <div class="stat__icontext ">
+                          <h4>Status</h4>
+                          <h6>Open
+                            <span class="pull__right ">Close</span>
+                          </h6>
+                          <small>20
+                            <span class="pull__right ">5</span>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-4 ">
+                <div class="col-12 col-sm-12 col-xxl-6 ">
+                  <a class="element-box el-tablo centered trend-in-corner smaller card__pd0 " href="# ">
+                    <div class="row ">
+                      <div class="col-sm-4 col-lg-4 col-xxl-4 ">
+                        <div class="stat__bgyellow ">
+                          <div class="os-icon os-icon- stat__iconwrapper stat__icon "></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-8 col-lg-8 col-xxl-8 ">
+                        <div class="stat__icontext ">
+                          <h4>Response</h4>
+                          <h6>₦
+                            <span class="pull__right ">Time</span>
+                          </h6>
+                          <small>25,800
+                            <span class="pull__right ">24hr</span>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="table__wrapper">
+              <div class="table__heading">
+                <h5 class="form-header">
+                  All Tickets
+                </h5>
+              </div>
+              <br>
+              <div class="table-responsive">
+                <div id="dataTable1_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
+                  <div class="row">
+                    <div class="col">
+                      <table id="dataTable1" width="100%" class="table table-striped table-lightfont dataTable" role="grid" aria-describedby="dataTable1_info"
+                        style="width: 100%;">
+                        <thead>
+                          <tr role="row">
+                            <th class="sorting_asc" tabindex="0" aria-controls="dataTable1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending"
+                              style="width: 105px;">ID #</th>
+                            <th class="sorting" tabindex="0" aria-controls="dataTable1" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending"
+                              style="width: 162px;">Title</th>
+                            <th class="sorting" tabindex="0" aria-controls="dataTable1" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending"
+                              style="width: 74px;">Status</th>
+                            <th class="sorting" tabindex="0" aria-controls="dataTable1" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending"
+                              style="width: 21px;">Category</th>
+                          </tr>
+                        </thead>
+                        <!-- <tfoot>
+                            <tr>
+                              <th rowspan="1" colspan="1">Name</th>
+                              <th rowspan="1" colspan="1">Position</th>
+                              <th rowspan="1" colspan="1">Office</th>
+                              <th rowspan="1" colspan="1">Age</th>
+                            </tr>
+                          </tfoot> -->
+                        <tbody>
+                          <!-- <tr role="row" class="odd">
+                              <td class="sorting_1">Airi Satou</td>
+                              <td>Accountant</td>
+                              <td>Tokyo</td>
+                              <td>33</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td class="sorting_1">Angelica Ramos</td>
+                              <td>Chief Executive Officer (CEO)</td>
+                              <td>London</td>
+                              <td>47</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td class="sorting_1">Ashton Cox</td>
+                              <td>Junior Technical Author</td>
+                              <td>San Francisco</td>
+                              <td>66</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td class="sorting_1">Bradley Greer</td>
+                              <td>Software Engineer</td>
+                              <td>London</td>
+                              <td>41</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td class="sorting_1">Brenden Wagner</td>
+                              <td>Software Engineer</td>
+                              <td>San Francisco</td>
+                              <td>28</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td class="sorting_1">Brielle Williamson</td>
+                              <td>Integration Specialist</td>
+                              <td>New York</td>
+                              <td>61</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td class="sorting_1">Bruno Nash</td>
+                              <td>Software Engineer</td>
+                              <td>London</td>
+                              <td>38</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td class="sorting_1">Caesar Vance</td>
+                              <td>Pre-Sales Support</td>
+                              <td>New York</td>
+                              <td>21</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td class="sorting_1">Cara Stevens</td>
+                              <td>Sales Assistant</td>
+                              <td>New York</td>
+                              <td>46</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td class="sorting_1">Cedric Kelly</td>
+                              <td>Senior Javascript Developer</td>
+                              <td>Edinburgh</td>
+                              <td>22</td>
+                            </tr> -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="display-type"></div>
+  </div>
+  <footer>
+    <div class="copyright__section">
+      Copyright © 2019. All Rights Reserved
+    </div>
+  </footer>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/chart.js/dist/Chart.min.js"></script>
+  <script src="bower_components/select2/dist/js/select2.full.min.js"></script>
+  <script src="bower_components/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+  <script src="bower_components/ckeditor/ckeditor.js"></script>
+  <script src="bower_components/bootstrap-validator/dist/validator.min.js"></script>
+  <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="bower_components/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+  <script src="bower_components/dropzone/dist/dropzone.js"></script>
+  <script src="bower_components/editable-table/mindmup-editabletable.js"></script>
+  <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+  <script src="bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="bower_components/tether/dist/js/tether.min.js"></script>
+  <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+  <script src="bower_components/bootstrap/js/dist/util.js"></script>
+  <script src="bower_components/bootstrap/js/dist/alert.js"></script>
+  <script src="bower_components/bootstrap/js/dist/button.js"></script>
+  <script src="bower_components/bootstrap/js/dist/carousel.js"></script>
+  <script src="bower_components/bootstrap/js/dist/collapse.js"></script>
+  <script src="bower_components/bootstrap/js/dist/dropdown.js"></script>
+  <script src="bower_components/bootstrap/js/dist/modal.js"></script>
+  <script src="bower_components/bootstrap/js/dist/tab.js"></script>
+  <script src="bower_components/bootstrap/js/dist/tooltip.js"></script>
+  <script src="bower_components/bootstrap/js/dist/popover.js"></script>
+  <script src="js/demo_customizer.js?version=4.4.0"></script>
+  <script src="js/main.js?version=4.4.0"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-XXXXXXX-9', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>
